@@ -5,16 +5,6 @@ class Program
     
     static void Main(string[] args)
     {
-        
-        //Instance of Entry.cs
-        // myEntry._date = DateTime.Now.ToShortDateString();
-        
-        // Console.WriteLine(">Entry:");
-        // myEntry._entry = Console.ReadLine();
-        // Console.WriteLine();
-
-        // myEntry.DisplayEntry();
-
         Journal myJournal = new Journal();
 
         Console.WriteLine("Welcome to Journaltron 6000");
