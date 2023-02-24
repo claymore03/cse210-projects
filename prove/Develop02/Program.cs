@@ -6,7 +6,7 @@ class Program
     static void Main(string[] args)
     {
         Journal myJournal = new Journal();
-
+        myJournal._entries = null; 
         Console.WriteLine("Welcome to Journaltron 6000");
         while(true)
         {
