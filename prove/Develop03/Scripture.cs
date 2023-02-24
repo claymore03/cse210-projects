@@ -1,0 +1,1 @@
+//Tracks the text of a scripture reference
