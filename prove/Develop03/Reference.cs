@@ -5,24 +5,65 @@ public class Reference
 
     private int _chapter;
 
-    private int _startVerse;
+    private string _startVerse;
 
-    private int _endVerse;
+    private string _endVerse;
 
     public Reference(string book, int chapter, int startVerse)
     {
         _book = book;
         _chapter = chapter;
-        _startVerse = startVerse;
+        _startVerse = Convert.ToString(startVerse);
     }
 
     public Reference(string book, int chapter, int startVerse, int endVerse)
     {
         _book = book;
         _chapter = chapter;
-        _startVerse = startVerse;
-        _endVerse = endVerse;
+        _startVerse = Convert.ToString(startVerse);
+        _endVerse = Convert.ToString(endVerse);
     }
+
+    //Getter and Setter for Book value
+    public string GetBook(string newBook)
+    {
+        return _book;
+    }
+    public void SetBook(string newBook)
+    {
+        _book = newBook;
+    }
+
+    //Getter and Setter for Chapter value
+     public int GetChapter(int newChapter)
+    {
+        return _chapter;
+    }
+    public void SetChapter(int newChapter)
+    {
+        _chapter = newChapter;
+    }
+
+    //Getter and Setter for Start Verse value
+     public string GetStartVerse(string newStartVerse)
+    {
+        return _startVerse;
+    }
+    public void SetStartVerse(string newStartVerse)
+    {
+        _startVerse = newStartVerse;
+    }
+
+    //Getter and Setter for End Verse value
+      public string GetEndVerse(string newEndVerse)
+    {
+        return _endVerse;
+    }
+    public void SetEndVerse(string newEndVerse)
+    {
+        _endVerse = newEndVerse;
+    }
+
 
     public string SingleVerseScripture()
     {
@@ -33,4 +74,5 @@ public class Reference
     {
         return $"{_book} {_chapter}:{_startVerse}-{_endVerse}";
     }
+
 }
